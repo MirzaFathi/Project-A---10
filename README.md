@@ -1,5 +1,5 @@
 # Analisis Sentimen pada Pengaruh Tiktok Shop pada UMKM Menggunakan NLP
-Written by: Mirza Fathi Taufiqurrahman (5026231105), 
+Written by: Mirza Fathi Taufiqurrahman (5026231105), M Faiza Fachra Azizi (5026231126), Ida Bagus A (5026231105), Ibrahim Amar Alfanani (5026231195), Hizkia Crisantino (5026231040)
 
 # 📕Introduction 
 Topik yang dipilih pada penelitian ini adalah pengaruh dari Tiktok Shop terhadap UMKM mulai dari regulasinya, dampak sisi positif, dan
@@ -8,9 +8,13 @@ Menentukan data
 
 Abstract
 
-Mengapa topik ini relevan
+Ekosistem perdagangan digital di Indonesia tengah mengalami pergeseran paradigma dengan hadirnya fenomena social commerce, khususnya melalui platform TikTok Shop. Relevansi topik ini terletak pada kemampuannya mengubah perilaku belanja konsumen dari pencarian produk secara aktif menjadi konsumsi konten yang interaktif melalui video pendek dan live streaming. Mengingat Indonesia merupakan salah satu pasar TikTok terbesar di dunia, integrasi fitur belanja langsung ini menciptakan dualitas dampak: di satu sisi menawarkan peluang digitalisasi yang cepat bagi pelaku usaha, namun di sisi lain menimbulkan disrupsi masif terhadap pelaku UMKM tradisional. Dinamika ini mencapai puncaknya pada intervensi regulasi pemerintah melalui Permendag No. 31 Tahun 2023, yang menjadikan analisis terhadap pengaruh TikTok Shop sebuah isu krusial untuk menentukan masa depan ketahanan ekonomi kerakyatan di era transformasi digital.
 
-(Pertanyaan riset)
+
+Berdasarkan fenomena tersebut, kelompok kami merumuskan pertanyaan riset utama: "Bagaimana pola sentimen publik dan pelaku UMKM di media sosial terhadap kehadiran TikTok Shop di Indonesia, dan sejauh mana narasi digital tersebut mencerminkan keberhasilan atau tantangan transformasi digital bagi pengusaha kecil?" Alasan utama kelompok kami memutuskan untuk meneliti hal ini adalah karena melimpahnya data tekstual tidak terstruktur di media sosial yang mencerminkan opini jujur masyarakat. Hal ini memberikan peluang ideal untuk mengimplementasikan teknik Natural Language Processing (NLP) melalui Google Colab, seperti Sentiment Analysis dan Topic Modeling. Kami ingin melihat apakah data tersebut menunjukkan dukungan terhadap efisiensi digital atau justru kekhawatiran terhadap persaingan harga yang tidak sehat, sehingga riset ini dapat memberikan wawasan berbasis data bagi para pengambil kebijakan.
+
+
+Urgensi masalah ini didukung oleh berbagai studi terindeks Scopus yang menyoroti pergeseran pasar dan efektivitas metodologi NLP. Studi oleh Han et al. (2023) dalam Journal of Theoretical and Applied Electronic Commerce Research https://doi.org/10.3390/jtaer18010015 menjelaskan bagaimana fitur sosial meningkatkan adopsi belanja secara impulsif, yang menjustifikasi mengapa platform ini menjadi ancaman serius bagi ritel konvensional. Indrawati et al. (2022) dalam jurnal Sustainability https://doi.org/10.3390/su141912444 secara spesifik membahas tantangan adopsi teknologi pada UMKM di Indonesia, memperkuat dasar mengapa fokus pada pelaku usaha kecil sangat penting. Lebih lanjut, Wongkitrungrueng & Assarut (2020) dalam Journal of Retailing and Consumer Services https://doi.org/10.1016/j.jretconser.2018.08.005 menunjukkan bahwa keterlibatan melalui live streaming adalah kunci kepercayaan konsumen modern. Terakhir, penggunaan NLP sebagai metode divalidasi oleh Li et al. (2024) dalam IJIM Data Insights https://doi.org/10.1016/j.jjimei.2024.100267 sebagai alat paling efektif untuk mengevaluasi sentimen pasar dalam skala besar, yang membuktikan bahwa pendekatan teknis kelompok kami memiliki landasan ilmiah yang kuat.
 
 Sentiment Analysis dari Article
 
