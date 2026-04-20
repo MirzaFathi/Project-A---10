@@ -15,26 +15,27 @@ Urgensi masalah ini didukung oleh berbagai studi terindeks Scopus yang menyoroti
 # 📕Data
 # Data Acquisition
 Data diambil dengan script python dengan modul scriptparser dan newspaper3k. Lalu menggunakan filter queries untuk mencari artikel terkait, diantaranya ""TikTok Shop Indonesia", "TikTok Shop UMKM", "TikTok Shop regulasi", "Dampak TikTok Shop", "UMKM Bangkrut", "TikTok Shop UMKM gulung tikar", "TikTok Shop bunuh UMKM", "Tiktok UMKM".
-Lalu data/kolom yang diambil adalah:
-    - title: Judul artikel
-    - source: Source artikel
-    - link: Link artikel
-    - published: Tanggal dan waktu publish
-    - content: Isi/text dari artikel
-    - tag: kategori artikel
-      terbagi jadi 6 tag:
-      Regulasi	Isinya: Berita seputar aturan pemerintah, pajak, audit, izin operasional, denda KPPU, dan kepatuhan terhadap hukum Indonesia.
-      Bisnis	Isinya: Berita tentang angka penjualan, profit, investasi, akuisisi/merger (GoTo & TikTok), pangsa pasar, dan persaingan antar platform (Shopee vs TikTok).
-      Edukasi	Isinya: Berita tentang pelatihan, workshop, webinar, tips jualan, dan pengembangan talenta (seperti pelatihan Live Host).
-      Event	Isinya: Berita seputar agenda resmi, pameran, summit, dan kampanye promosi musiman (Harbolnas, Ramadan, Tanggal Kembar).
-      Isu	Isinya: Berita tentang masalah, kabar negatif, atau kontroversi (PHK massal, barang impor ilegal, penipuan, keluhan pedagang soal biaya admin).
-      Strategi	Isinya: Berita tentang langkah taktis perusahaan atau tips sukses penjual untuk masa depan (biasanya mengandung kata "Sinergi", "Pacu", "Dongkrak", atau "Langkah").
-    - sentimen: Terbagi berdasarkan nada artikel
 
-# Datasets definition (2) atau penjelasan tentang dataset yang dipakai
+Lalu data/kolom yang diambil adalah:
+- title: Judul artikel
+- source: Source artikel
+- link: Link artikel
+- published: Tanggal dan waktu publish
+- content: Isi/text dari artikel
+- tag: kategori artikel
+  terbagi jadi 6 tag:
+  Regulasi	Isinya: Berita seputar aturan pemerintah, pajak, audit, izin operasional, denda KPPU, dan kepatuhan terhadap hukum Indonesia.
+  Bisnis	Isinya: Berita tentang angka penjualan, profit, investasi, akuisisi/merger (GoTo & TikTok), pangsa pasar, dan persaingan antar platform (Shopee vs TikTok).
+  Edukasi	Isinya: Berita tentang pelatihan, workshop, webinar, tips jualan, dan pengembangan talenta (seperti pelatihan Live Host).
+  Event	Isinya: Berita seputar agenda resmi, pameran, summit, dan kampanye promosi musiman (Harbolnas, Ramadan, Tanggal Kembar).
+  Isu	Isinya: Berita tentang masalah, kabar negatif, atau kontroversi (PHK massal, barang impor ilegal, penipuan, keluhan pedagang soal biaya admin).
+  Strategi	Isinya: Berita tentang langkah taktis perusahaan atau tips sukses penjual untuk masa depan (biasanya mengandung kata "Sinergi", "Pacu", "Dongkrak", atau "Langkah").
+- sentimen: Terbagi berdasarkan nada artikel
+
+# Datasets definition atau penjelasan tentang dataset yang dipakai
 dataset yang digunakan merupakan hasil extract python script lalu diberikan sentimen dan tagging secara manual
 
-# Dataset Preparation and Dataset Preprocessing (4)
+# Dataset Preparation and Dataset Preprocessing
 - uppercase to lowercase
 - stopwords
 - membuat kolom before stopwords dan after stopwords
