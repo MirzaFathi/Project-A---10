@@ -14,26 +14,35 @@ Urgensi masalah ini didukung oleh berbagai studi terindeks Scopus yang menyoroti
 
 # 📕Data
 # Data Acquisition
-Data diambil dengan script python dengan modul scriptparser dan newspaper3k. Lalu menggunakan filter queries untuk mencari artikel terkait, diantaranya ""TikTok Shop Indonesia", "TikTok Shop UMKM", "TikTok Shop regulasi", "Dampak TikTok Shop", "UMKM Bangkrut", "TikTok Shop UMKM gulung tikar", "TikTok Shop bunuh UMKM", "Tiktok UMKM".
+Data diambil dengan script python dengan modul scriptparser dan newspaper3k serta beautifulsoup melalui google colab. Lalu menggunakan filter queries untuk mencari artikel terkait, diantaranya ""TikTok Shop Indonesia", "TikTok Shop UMKM", "TikTok Shop regulasi", "Dampak TikTok Shop", "UMKM Bangkrut", "TikTok Shop UMKM gulung tikar", "TikTok Shop bunuh UMKM", "Tiktok UMKM".
 
-Lalu data/kolom yang diambil adalah:
+Metode Pengumpulan:
+1. Penarikan (Web Scraping): Menggunakan script untuk menelusuri berita yang mengandung kata kunci spesifik
+2. Ekstraksi Teks (Parsing): Dari halaman web yang ditemukan, elemen HTML ditarik untuk mengambil metadata dan konten berita, yang kemudian dimasukkan ke dalam kolom title, source, undirect link, published, dan content.
+3. Pembersihan Awal (Basic Preprocessing): Menyusun data mentah yang berhasil ditarik ke dalam format tabular baris dan kolom yang rapi agar siap untuk dilabeli.
+4. Pemberian Label (Manual Labeling): Melakukan analisis pada kolom title dan content untuk menentukan nilai pada kolom category (topik pembahasan) dan sentimen (nada pemberitaan).
+
+# Datasets Definition
+Dataset yang digunakan untuk analisis ini berupa kumpulan artikel terkait TikTok Shop, dinamika e-commerce, UMKM, dan regulasi di Indonesia, yang telah dilabeli berdasarkan kategori topik dan sentimennya.
+
+Struktur dari dataset ini adalah:
 - title: Judul artikel
 - source: Source artikel
 - link: Link artikel
 - published: Tanggal dan waktu publish
 - content: Isi/text dari artikel
+- sentimen: Terbagi berdasarkan nada artikel
 - tag: kategori artikel
   terbagi jadi 6 tag:
-  Regulasi	Isinya: Berita seputar aturan pemerintah, pajak, audit, izin operasional, denda KPPU, dan kepatuhan terhadap hukum Indonesia.
-  Bisnis	Isinya: Berita tentang angka penjualan, profit, investasi, akuisisi/merger (GoTo & TikTok), pangsa pasar, dan persaingan antar platform (Shopee vs TikTok).
-  Edukasi	Isinya: Berita tentang pelatihan, workshop, webinar, tips jualan, dan pengembangan talenta (seperti pelatihan Live Host).
-  Event	Isinya: Berita seputar agenda resmi, pameran, summit, dan kampanye promosi musiman (Harbolnas, Ramadan, Tanggal Kembar).
-  Isu	Isinya: Berita tentang masalah, kabar negatif, atau kontroversi (PHK massal, barang impor ilegal, penipuan, keluhan pedagang soal biaya admin).
-  Strategi	Isinya: Berita tentang langkah taktis perusahaan atau tips sukses penjual untuk masa depan (biasanya mengandung kata "Sinergi", "Pacu", "Dongkrak", atau "Langkah").
-- sentimen: Terbagi berdasarkan nada artikel
 
-# Datasets definition atau penjelasan tentang dataset yang dipakai
-dataset yang digunakan merupakan hasil extract python script lalu diberikan sentimen dan tagging secara manual
+| Kategori | Deskripsi |
+| :--- | :--- |
+| **Regulasi** | Berita seputar aturan pemerintah, pajak, audit, izin operasional, denda KPPU, dan kepatuhan terhadap hukum Indonesia. |
+| **Bisnis** | Berita tentang angka penjualan, profit, investasi, akuisisi/merger (GoTo & TikTok), pangsa pasar, dan persaingan antar platform (Shopee vs TikTok). |
+| **Edukasi** | Berita tentang pelatihan, workshop, webinar, tips jualan, dan pengembangan talenta (seperti pelatihan Live Host). |
+| **Event** | Berita seputar agenda resmi, pameran, summit, dan kampanye promosi musiman (Harbolnas, Ramadan, Tanggal Kembar). |
+| **Isu** | Berita tentang masalah, kabar negatif, atau kontroversi (PHK massal, barang impor ilegal, penipuan, keluhan pedagang soal biaya admin). |
+| **Strategi** | Berita tentang langkah taktis perusahaan atau tips sukses penjual untuk masa depan (biasanya mengandung kata "Sinergi", "Pacu", "Dongkrak", atau "Langkah"). |
 
 # Dataset Preparation and Dataset Preprocessing
 - uppercase to lowercase
