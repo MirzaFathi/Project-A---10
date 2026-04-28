@@ -1,5 +1,5 @@
 # Analisis Sentimen pada Pengaruh Tiktok Shop pada UMKM Menggunakan NLP
-Written by: Mirza Fathi Taufiqurrahman (5026231105), M Faiza Fachra Azizi (5026231126), Ida Bagus A (5026231105), Ibrahim Amar Alfanani (5026231195), Hizkia Crisantino (5026231040)
+Written by: Mirza Fathi Taufiqurrahman (5026231105), M Faiza Fachra Azizi (5026231126), Ida Bagus A (5026231120), Ibrahim Amar Alfanani (5026231195), Hizkia Crisantino (5026231040)
 
 # 📕Introduction 
 Topik yang dipilih pada penelitian ini adalah pengaruh dari Tiktok Shop terhadap UMKM mulai dari regulasinya, dampak dari segi bisnis, dan strateginya. Sehingga kami mencoba mengumpulkan data yaitu artikel terkait Tiktok Shop yang berkaitan dengan UMKM.
