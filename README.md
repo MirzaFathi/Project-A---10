@@ -59,8 +59,23 @@ Dalam tata bahasa Indonesia, terdapat banyak kata fungsional yang sangat sering 
 4. Pengembalian Kata Dasar (Stemming)
 Teks berita sering kali menggunakan bahasa formal yang kaya akan imbuhan, baik awalan, sisipan, maupun akhiran. Tahap stemming bertujuan untuk memotong seluruh imbuhan tersebut dan mengembalikan setiap kata ke bentuk dasarnya. Dengan mengembalikan kata menjadi bentuk dasar, sistem dapat mengelompokkan variasi kata yang memiliki makna identik, sehingga meningkatkan akurasi pembobotan kata dalam analisis selanjutnya.
 
-# Analysis TF-IDF
+# 📕Analysis TF-IDF
+Analisis Term Frequency-Inverse Document Frequency (TF-IDF) dilakukan untuk mengekstrak dan mengevaluasi kata-kata yang paling signifikan dalam korpus berita. Analisis ini dieksplorasi melalui beberapa dimensi untuk menangkap konteks secara utuh:  
 
-# Result
+Analisis Keseluruhan (Overall): Didominasi oleh kluster aktivitas ekonomi (jual, produk, usaha, pasar), regulasi (dagang, atur, perintah).  
 
-# Conclusion
+Analisis Temporal (Per Kuartal): Memetakan 5 fase pergeseran isu, mulai dari fase eksplorasi platform, krisis regulasi (didominasi term 'dagang' dan 'atur'), transisi merger, adopsi digital (didominasi term 'live'), hingga kampanye musiman (term 'ramadan').  
+
+Analisis Kategori & Sumber Berita: Mengungkap diversitas framing editorial, di mana portal tertentu fokus pada monetisasi iklan digital, sementara yang lain fokus pada perdagangan fisik, perlindungan UMKM, atau perspektif makroekonomi.  
+
+Analisis Lanjutan (POS, NER, & N-Grams): Penggunaan Bigram dan Trigram berhasil menangkap frasa krusial penanda diskursus seperti "media sosial", "social commerce", "live streaming", dan "pasar tanah abang".
+
+# 📕Result
+Pola Wacana Media (TF-IDF & NER): Pemberitaan terbukti bersifat regulasi-sentris, reaktif-temporal terhadap perubahan kebijakan, dan terpolarisasi secara framing antar media. Kategori Named Entity Recognition (NER) mengonfirmasi dominasi entitas institusional/organisasi dibandingkan figur perorangan.  
+
+Performa Klasifikasi Sentimen: Evaluasi model Machine Learning untuk klasifikasi sentimen 3 kelas (Positif, Negatif, Netral) menunjukkan bahwa Multinomial Naive Bayes (54,04%) mengungguli Logistic Regression (49,07%).  
+
+Tantangan Model: Kelas "Netral" secara konsisten menjadi kelas yang paling sulit diprediksi (F1-score terendah) oleh kedua model, mengindikasikan adanya tumpang tindih pola kata antara artikel netral dengan artikel bernada positif maupun negatif.  
+
+# 📕Conclusion
+Kehadiran TikTok Shop telah mendisrupsi ekosistem perdagangan digital dan UMKM di Indonesia, yang memicu respons reaktif dari media massa dan pemerintah (Permendag No. 31 Tahun 2023). Berdasarkan pendekatan Natural Language Processing (NLP), dapat disimpulkan bahwa narasi media massa di Indonesia tidak hanya menyoroti kerentanan pasar tradisional (seperti Tanah Abang), tetapi juga secara signifikan mengafirmasi peluang adaptasi digital bagi pelaku UMKM. Penelitian ini memberikan data-driven insights yang membuktikan pentingnya penguatan literasi digital pelaku usaha, serta dapat menjadi landasan evaluasi bagi perumusan kebijakan e-commerce di masa depan.
